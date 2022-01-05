@@ -1,5 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 .header {
@@ -96,7 +97,16 @@ a {
     background-color: #676768;
 }
 
-.content h2 {
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.card-container h2 {
     text-align: center;
     font-size: 36px;
     font-weight: 900;
@@ -105,8 +115,8 @@ a {
 }
 
 .cards {
-    justify-content: center;
     display: flex;
+    flex-wrap: wrap;
     padding: 50px 0;
     gap: 50px;
 }
@@ -125,4 +135,31 @@ a {
 .card p {
     text-align: center;
     margin-top: 0px;
+}
+
+.testimony-container {
+    background-color: #E5E7EB;
+}
+
+.testimony {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.testimony h2 {
+    align-self: center;
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+    margin-bottom: 0;
+}
+
+.testimony p {
+    width: 95%;
+    text-align: end;
+    font-weight: 700;
+    color: #1F2937;
+    margin-top: 0;
 }
