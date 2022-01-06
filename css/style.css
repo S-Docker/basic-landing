@@ -64,13 +64,12 @@ a {
     color: #E5E7EB;
 }
 
-.hero-left a {
+.hero-left a, .cta-button a {
     flex-grow: 0;
 	box-shadow:inset 0px 1px 0px 0px #97c4fe;
 	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
 	background-color:#3d94f6;
 	border-radius:6px;
-	border:1px solid #337fed;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -79,11 +78,16 @@ a {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #1570cd;
 }
-.hero-left a:hover {
+
+.hero-left a {
+    border:1px solid #337fed;
+}
+
+.hero-left a:hover, .cta-button a:hover {
 	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
 	background-color:#1e62d0;
 }
-.hero-left a:active {
+.hero-left a:active, .cta-button a:active {
 	position:relative;
 	top:1px;
 }
@@ -145,6 +149,7 @@ a {
     width: 60%;
     margin: 0 auto;
     padding: 50px;
+    margin-bottom: 100px;
 }
 
 .testimony h2 {
@@ -162,4 +167,30 @@ a {
     font-weight: 700;
     color: #1F2937;
     margin-top: 0;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 50px;
+    margin: 0 auto;
+    padding: 50px 0;
+    margin-bottom: 100px;
+    border-radius:10px;
+    background-color: #3882F6;
+}
+
+.cta h3, p {
+    margin: 0;
+    color: white;
+}
+
+.cta p {
+    font-size: 18px;
+}
+
+.cta-button a {
+    border:1px solid #ffffff;
 }
