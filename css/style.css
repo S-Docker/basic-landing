@@ -194,3 +194,9 @@ a {
 .cta-button a {
     border:1px solid #ffffff;
 }
+
+.footer {
+    background-color: #1F2937;
+    text-align: center;
+    padding: 20px 0;
+}
